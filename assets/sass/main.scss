@@ -1,0 +1,21 @@
+// ============================================================
+// MAIN — Entry point
+// ============================================================
+
+// General
+@import 'general/color';
+@import 'general/variables';
+@import 'general/mixins';
+@import 'general/fonts';
+@import 'general/reset';
+@import 'general/comon';
+
+// Layout
+@import 'layout/header';
+@import 'layout/footer';
+
+// Pages
+@import 'pages/index';
+
+// Vendor
+@import 'vendor';

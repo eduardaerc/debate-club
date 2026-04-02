@@ -1,0 +1,24 @@
+@mixin container($display: block) {
+    display: $display;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 100%;
+    border: 0;
+    padding: 0 $space-sm;
+    margin: 0 auto;
+    @media (min-width: $bp-desktop) {
+        max-width: 1260px;
+    }
+}
+
+@mixin transition($prop: all) {
+    transition: $prop $transition-speed ease;
+}
+
+@mixin overlay($color: rgba(0, 0, 0, 0.2)) {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-color: $color;
+    pointer-events: none;
+}
