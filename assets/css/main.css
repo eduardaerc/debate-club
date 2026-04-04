@@ -180,11 +180,6 @@ header nav {
 header nav div.nav-links {
   gap: 5rem;
 }
-@media (max-width: 678px) {
-  header nav div.nav-links {
-    display: none;
-  }
-}
 header nav div.nav-links a {
   font-family: "Gowun Batang", serif;
   color: #000000;
@@ -330,6 +325,7 @@ section.initial-banner div.announcement-bar {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    text-align: center;
   }
 }
 section.initial-banner div.announcement-bar p {
@@ -339,6 +335,11 @@ section.initial-banner div.announcement-bar p {
   line-height: 1.1;
   font-weight: 400;
   letter-spacing: -0.48px;
+}
+@media (max-width: 678px) {
+  section.initial-banner div.announcement-bar p {
+    max-width: 300px;
+  }
 }
 section.initial-banner div.announcement-bar a {
   font-family: "Rethink Sans", sans-serif;
@@ -429,7 +430,7 @@ section.what-we-do .container {
   width: 100%;
   max-width: 100%;
   border: 0;
-  padding: 0 20px;
+  padding: 0 10px;
   margin: 0 auto;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -498,6 +499,11 @@ section.what-we-do .info-cards-grid {
   width: 100%;
   row-gap: 7.5rem;
 }
+@media (max-width: 678px) {
+  section.what-we-do .info-cards-grid {
+    gap: 1.875rem;
+  }
+}
 section.what-we-do .info-cards-grid .info-card {
   background-color: #FCFAF6;
   border-radius: 10px;
@@ -553,7 +559,7 @@ section.what-we-do .info-cards-grid .info-card p {
 
 section.results {
   background-color: #FCFAF6;
-  padding: 0 1.875rem 0 3.75rem;
+  margin-bottom: 5rem;
 }
 section.results .container {
   display: block;
@@ -562,7 +568,7 @@ section.results .container {
   width: 100%;
   max-width: 100%;
   border: 0;
-  padding: 0 20px;
+  padding: 0 10px;
   margin: 0 auto;
 }
 @media (min-width: 1260px) {
@@ -615,6 +621,11 @@ section.results .container .results-lists {
   display: -ms-grid;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
+}
+@media (max-width: 678px) {
+  section.results .container .results-lists {
+    gap: 1.875rem;
+  }
 }
 section.results .container .results-lists div.content h3 {
   font-family: "Rethink Sans", sans-serif;

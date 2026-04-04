@@ -12,9 +12,13 @@ section.initial-banner {
         margin-bottom: calculateRem($space-lg);
         @media (max-width: $bp-mobile) {
             justify-content: center;
+            text-align: center;
         }
         & p {
             @include p($color: $black);
+            @media (max-width: $bp-mobile) {
+                max-width: 300px;
+            }
         }
         & a {
             @include p($color: $black);
@@ -87,6 +91,9 @@ section.what-we-do {
         grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
         width: 100%;
         row-gap: calculateRem(120px);
+        @media (max-width: $bp-mobile) {
+            gap: calculateRem($space-md);
+        }
         .info-card {
             background-color: $bg-primary;
             border-radius: $radius-sm;
@@ -114,7 +121,7 @@ section.what-we-do {
 
 section.results {
     background-color: $bg-primary;
-    padding: 0 calculateRem($space-md) 0 calculateRem(60px);
+    margin-bottom: calculateRem($space-xl);
     .container {
         @include container(block);
         div.illustration {
@@ -139,7 +146,9 @@ section.results {
         .results-lists {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
-            // gap: 60px;
+            @media (max-width: $bp-mobile) {
+                gap: calculateRem($space-md);
+            }
             div.content {
                 & h3 {
                     @include label($color: $text-color-1);

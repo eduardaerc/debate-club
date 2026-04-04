@@ -11,9 +11,9 @@ header {
         background-color: $bg-primary;
         div.nav-links {
             gap: calculateRem($space-xl);
-            @media (max-width: $bp-mobile) {
-                display: none;
-            }
+            // @media (max-width: $bp-mobile) {
+            //     display: none;
+            // }
             & a {
                 @include link($color: $black);
                 @include transition();

@@ -1,5 +1,6 @@
 export default function aos() {
-    window.AOS.init();
-    console.log('oieeeee')
+    window.AOS.init({
+      once: true,
+    });
   }
   

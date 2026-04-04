@@ -14,7 +14,7 @@ font-size: calculateRem($size);
     width: 100%;
     max-width: 100%;
     border: 0;
-    padding: 0 $space-sm;
+    padding: 0 $space-xs;
     margin: 0 auto;
     @media (min-width: $bp-desktop) {
         max-width: 1260px;
