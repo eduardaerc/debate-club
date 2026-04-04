@@ -1,7 +1,4 @@
-// ============================================================
-// MAIN — Entry point
-// ============================================================
-
+@import '../../node_modules/aos/dist/aos.css';
 // General
 @import 'general/color';
 @import 'general/variables';
@@ -17,5 +14,3 @@
 // Pages
 @import 'pages/index';
 
-// Vendor
-@import 'vendor';

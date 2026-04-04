@@ -1,3 +1,13 @@
+@function calculateRem($size) {
+    $remSize: $size / 16px;
+    @return #{$remSize}rem;
+  }
+
+@mixin fsize($size) {
+font-size: $size; 
+font-size: calculateRem($size);
+}
+
 @mixin container($display: block) {
     display: $display;
     box-sizing: border-box;
@@ -11,9 +21,13 @@
     }
 }
 
-@mixin transition($prop: all) {
-    transition: $prop $transition-speed ease;
-}
+@mixin transition($element: all 1s cubic-bezier(0.25, 0.8, 0.25, 1)) {
+    -webkit-transition: $element;
+    -moz-transition: $element;
+    -ms-transition: $element;
+    -o-transition: $element;
+    transition: $element;
+  }
 
 @mixin overlay($color: rgba(0, 0, 0, 0.2)) {
     content: '';

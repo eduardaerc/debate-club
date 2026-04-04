@@ -1,1 +1,4 @@
-import './modules/aos.js';
+import aos from "./modules/aos.js"
+
+
+aos();

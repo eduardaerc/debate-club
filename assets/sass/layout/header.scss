@@ -1,0 +1,36 @@
+header {
+    nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 9;
+        border-bottom: 1px solid $divider-1;
+        align-items: center;
+        padding: calculateRem($space-sm) calculateRem(16px);
+        width: 100%;
+        background-color: $bg-primary;
+        div.nav-links {
+            gap: calculateRem($space-xl);
+            @media (max-width: $bp-mobile) {
+                display: none;
+            }
+            & a {
+                @include link($color: $black);
+                @include transition();
+                &:hover {
+                    opacity: 1;
+                }
+            }
+            &:hover a:not(:hover) {
+                opacity: 0.2;
+            }
+        }
+        button.nav-hamburger {
+            display: none;
+            @include link($color: $black);
+            @media (max-width: $bp-mobile) {
+                display: block;
+            }
+        }
+    }
+}

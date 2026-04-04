@@ -1,0 +1,199 @@
+section.initial-banner {
+    padding-top: calculateRem(calc(60px + 16px));
+    div.announcement-bar {
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        background-color: $bg-accent;
+        border-radius: $radius-sm;
+        padding: calculateRem(16px) calculateRem($space-sm);
+        flex-wrap: wrap;
+        gap: calculateRem($space-sm);
+        margin-bottom: calculateRem($space-lg);
+        @media (max-width: $bp-mobile) {
+            justify-content: center;
+        }
+        & p {
+            @include p($color: $black);
+        }
+        & a {
+            @include p($color: $black);
+            text-decoration: underline;
+            cursor: pointer;
+        }
+    }
+    div.column {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        text-align: center;
+        & span {
+            @include p($color: $black);
+            margin-bottom: calculateRem($space-lg);
+        }
+        & h1 {
+            @include display($color: $black);
+            max-width: 983px;
+            margin-bottom: calculateRem($space-lg);
+        }
+        & a {
+            @include transition();
+            margin-bottom: calculateRem(65px);
+            text-decoration: underline;
+            cursor: pointer;
+            &:hover { 
+                opacity: 0.6; 
+            }
+        }
+        div.illustration {
+            width: 100%;
+            aspect-ratio: 1280 / 640;
+            overflow: hidden;
+            & img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+}
+
+section.what-we-do {
+    background-color: $bg-primary;
+    padding: calculateRem($space-2xl) 0;
+    .container {
+        @include container($display: flex);
+        flex-direction: column;
+        align-items: center;
+        & h2 {
+            @include display($color: $black);
+            text-align: center;
+            margin-bottom: calculateRem(110px);
+        }
+        & > span {
+            @include label();
+            margin-bottom: calculateRem(40px);
+        }
+        & > p {
+            @include heading-1($color: $black);
+            max-width: 800px;
+            text-align: center;
+            margin-bottom: calculateRem(100px);
+        }
+    }
+    .info-cards-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
+        width: 100%;
+        row-gap: calculateRem(120px);
+        .info-card {
+            background-color: $bg-primary;
+            border-radius: $radius-sm;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: calculateRem(40px);
+            & span {
+                @include label();
+            }
+            & h3 {
+                @include heading-1($color: $black);
+                max-width: 220px;
+                text-align: center;
+            }
+            & p {
+                @include p($color: $black);
+                max-width: 290px;
+                text-align: center;
+            }
+        }
+    }
+}
+
+section.results {
+    background-color: $bg-primary;
+    padding: 0 calculateRem($space-md) 0 calculateRem(60px);
+    .container {
+        @include container(block);
+        div.illustration {
+            border-radius: 10px;
+            width: 100%;
+            overflow: hidden;
+            margin-bottom: calculateRem(30px);
+            & img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        & h2 {
+            @include display($color: $black);
+            margin-bottom: calculateRem($space-lg);
+        }
+        & > p {
+            @include p($color: $text-color-2);
+            margin-bottom: calculateRem($space-lg);
+        }
+        .results-lists {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
+            // gap: 60px;
+            div.content {
+                & h3 {
+                    @include label($color: $text-color-1);
+                    margin-bottom: calculateRem($space-sm);
+                }
+                & ul {
+                    gap: calculateRem($space-sm);
+                    & li {
+                        border-left: 1px solid $divider-1;
+                        padding: calculateRem($space-sm);
+                        & a, & p {
+                            @include heading-1($color: $black);
+                            @include transition();
+                            &:hover {
+                                opacity: 0.6;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+section.cta {
+    position: relative;
+    overflow: hidden;
+    padding: calculateRem(60px) 0;
+    .cta-bg {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .cta-content {
+        position: relative;
+        z-index: 1;
+        background-color: rgba(0, 0, 0, 0.3);
+        border-radius: $radius-sm;
+        padding: calculateRem(24px);
+        align-items: center;
+        gap: calculateRem(16px);
+        width: 100%;
+        text-align: center;
+        max-width: 980px;
+        margin: 0 auto;
+        & h2 {
+            @include display($color: $text-light);
+        }
+        & a {
+            @include display($color: $text-light);
+            @include transition();
+            text-decoration: underline;
+            &:hover { opacity: 0.8; }
+        }
+    }
+}
