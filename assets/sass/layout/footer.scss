@@ -30,9 +30,13 @@ footer {
         div.footer-contact {
             flex: 1;
             gap: calculateRem($space-sm);
-            & p {
+            & a {
                 @include heading-1($color: $text-light);
                 max-width: 340px;
+                @include transition();
+                &:hover {
+                    color: #fcfaf689;
+                }
             }
         }
     }

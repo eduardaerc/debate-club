@@ -1,12 +1,12 @@
 section.initial-banner {
-    padding-top: calculateRem(calc(60px + 16px));
+    padding-top: calculateRem(calc(60px + $space-sm));
     div.announcement-bar {
         justify-content: space-between;
         align-items: center;
         width: 100%;
         background-color: $bg-accent;
         border-radius: $radius-sm;
-        padding: calculateRem(16px) calculateRem($space-sm);
+        padding: calculateRem($space-sm) calculateRem($space-sm);
         flex-wrap: wrap;
         gap: calculateRem($space-sm);
         margin-bottom: calculateRem($space-lg);
@@ -23,7 +23,10 @@ section.initial-banner {
         & a {
             @include p($color: $black);
             text-decoration: underline;
-            cursor: pointer;
+            @include transition();
+            &:hover {
+                color: $text-color-2;
+            }
         }
     }
     div.column {
@@ -43,11 +46,11 @@ section.initial-banner {
         }
         & a {
             @include transition();
-            margin-bottom: calculateRem(65px);
+            margin-bottom: calculateRem($space-lg);
             text-decoration: underline;
-            cursor: pointer;
-            &:hover { 
-                opacity: 0.6; 
+            @include transition();
+            &:hover {
+                color: $text-color-2;
             }
         }
         div.illustration {
@@ -128,7 +131,7 @@ section.results {
             border-radius: 10px;
             width: 100%;
             overflow: hidden;
-            margin-bottom: calculateRem(30px);
+            margin-bottom: calculateRem($space-md);
             & img {
                 width: 100%;
                 height: 100%;
@@ -159,11 +162,11 @@ section.results {
                     & li {
                         border-left: 1px solid $divider-1;
                         padding: calculateRem($space-sm);
-                        & a, & p {
+                        & a {
                             @include heading-1($color: $black);
                             @include transition();
                             &:hover {
-                                opacity: 0.6;
+                                color: $text-color-2;
                             }
                         }
                     }
@@ -176,13 +179,10 @@ section.cta {
     position: relative;
     overflow: hidden;
     padding: calculateRem(60px) 0;
-    .cta-bg {
-        position: absolute;
-        inset: 0;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
+    background-image: url('/assets/img/cta.webp');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     .cta-content {
         position: relative;
         z-index: 1;
@@ -190,7 +190,7 @@ section.cta {
         border-radius: $radius-sm;
         padding: calculateRem(24px);
         align-items: center;
-        gap: calculateRem(16px);
+        gap: calculateRem($space-sm);
         width: 100%;
         text-align: center;
         max-width: 980px;
@@ -202,7 +202,9 @@ section.cta {
             @include display($color: $text-light);
             @include transition();
             text-decoration: underline;
-            &:hover { opacity: 0.8; }
+            &:hover {
+                opacity: 0.7;
+            }
         }
     }
 }

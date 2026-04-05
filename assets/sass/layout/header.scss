@@ -6,14 +6,14 @@ header {
         z-index: 9;
         border-bottom: 1px solid $divider-1;
         align-items: center;
-        padding: calculateRem($space-sm) calculateRem(16px);
+        padding: calculateRem($space-sm) calculateRem($space-sm);
         width: 100%;
         background-color: $bg-primary;
         div.nav-links {
             gap: calculateRem($space-xl);
-            // @media (max-width: $bp-mobile) {
-            //     display: none;
-            // }
+            @media (max-width: $bp-mobile) {
+                display: none !important;
+            }
             & a {
                 @include link($color: $black);
                 @include transition();
@@ -25,11 +25,36 @@ header {
                 opacity: 0.2;
             }
         }
-        button.nav-hamburger {
+        button {
             display: none;
             @include link($color: $black);
             @media (max-width: $bp-mobile) {
                 display: block;
+            }
+        }
+    }
+    div.mobile-menu {
+        & button {
+            @include link($color: $black);
+        }
+        & nav {
+            width: 100vw;
+            height: 100vh;
+            background-color: $bg-primary;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            z-index: 9;
+            overflow: hidden;
+            justify-content: center;
+            align-items: center;
+            gap: $space-xs;
+            transform: translateX(-100%);
+            @include transition();
+            & button {
+                position: absolute;
+                top: 5%;
+                right: 5%;
             }
         }
     }

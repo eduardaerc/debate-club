@@ -1,0 +1,443 @@
+0 verbose cli /Users/eduardarosseto/.nvm/versions/node/v16.19.1/bin/node /Users/eduardarosseto/.nvm/versions/node/v16.19.1/bin/npm
+1 info using npm@8.19.3
+2 info using node@v16.19.1
+3 timing npm:load:whichnode Completed in 0ms
+4 timing config:load:defaults Completed in 1ms
+5 timing config:load:file:/Users/eduardarosseto/.nvm/versions/node/v16.19.1/lib/node_modules/npm/npmrc Completed in 1ms
+6 timing config:load:builtin Completed in 1ms
+7 timing config:load:cli Completed in 3ms
+8 timing config:load:env Completed in 1ms
+9 timing config:load:file:/Users/eduardarosseto/Dev/Estudos/library/.npmrc Completed in 0ms
+10 timing config:load:project Completed in 2ms
+11 timing config:load:file:/Users/eduardarosseto/.npmrc Completed in 0ms
+12 timing config:load:user Completed in 0ms
+13 timing config:load:file:/Users/eduardarosseto/.nvm/versions/node/v16.19.1/etc/npmrc Completed in 0ms
+14 timing config:load:global Completed in 0ms
+15 timing config:load:validate Completed in 0ms
+16 timing config:load:credentials Completed in 1ms
+17 timing config:load:setEnvs Completed in 0ms
+18 timing config:load Completed in 10ms
+19 timing npm:load:configload Completed in 10ms
+20 timing npm:load:mkdirpcache Completed in 1ms
+21 timing npm:load:mkdirplogs Completed in 1ms
+22 verbose title npm install esbuild@0.19.12
+23 verbose argv "install" "esbuild@0.19.12" "--save-dev"
+24 timing npm:load:setTitle Completed in 2ms
+25 timing config:load:flatten Completed in 3ms
+26 timing npm:load:display Completed in 3ms
+27 verbose logfile logs-max:10 dir:/Users/eduardarosseto/Dev/Estudos/library/.npm-cache/_logs
+28 verbose logfile /Users/eduardarosseto/Dev/Estudos/library/.npm-cache/_logs/2026-04-05T23_29_29_681Z-debug-0.log
+29 timing npm:load:logFile Completed in 5ms
+30 timing npm:load:timers Completed in 0ms
+31 timing npm:load:configScope Completed in 0ms
+32 timing npm:load Completed in 23ms
+33 timing arborist:ctor Completed in 0ms
+34 silly logfile done cleaning log files
+35 timing idealTree:init Completed in 14ms
+36 timing idealTree:userRequests Completed in 1ms
+37 silly idealTree buildDeps
+38 silly fetch manifest esbuild@0.19.12
+39 verbose shrinkwrap failed to load node_modules/.package-lock.json out of date, updated: node_modules
+40 http fetch GET 200 https://registry.npmjs.org/esbuild 59ms (cache hit)
+41 silly placeDep ROOT esbuild@0.19.12 OK for:  want: 0.19.12
+42 silly fetch manifest @esbuild/aix-ppc64@0.19.12
+43 silly fetch manifest @esbuild/linux-arm@0.19.12
+44 silly fetch manifest @esbuild/linux-x64@0.19.12
+45 silly fetch manifest @esbuild/sunos-x64@0.19.12
+46 silly fetch manifest @esbuild/win32-x64@0.19.12
+47 silly fetch manifest @esbuild/darwin-x64@0.19.12
+48 silly fetch manifest @esbuild/linux-ia32@0.19.12
+49 silly fetch manifest @esbuild/netbsd-x64@0.19.12
+50 silly fetch manifest @esbuild/win32-ia32@0.19.12
+51 silly fetch manifest @esbuild/android-arm@0.19.12
+52 silly fetch manifest @esbuild/android-x64@0.19.12
+53 silly fetch manifest @esbuild/freebsd-x64@0.19.12
+54 silly fetch manifest @esbuild/linux-arm64@0.19.12
+55 silly fetch manifest @esbuild/linux-ppc64@0.19.12
+56 silly fetch manifest @esbuild/linux-s390x@0.19.12
+57 silly fetch manifest @esbuild/openbsd-x64@0.19.12
+58 silly fetch manifest @esbuild/win32-arm64@0.19.12
+59 silly fetch manifest @esbuild/darwin-arm64@0.19.12
+60 silly fetch manifest @esbuild/android-arm64@0.19.12
+61 silly fetch manifest @esbuild/freebsd-arm64@0.19.12
+62 silly fetch manifest @esbuild/linux-loong64@0.19.12
+63 silly fetch manifest @esbuild/linux-riscv64@0.19.12
+64 silly fetch manifest @esbuild/linux-mips64el@0.19.12
+65 http fetch GET 200 https://registry.npmjs.org/@esbuild%2flinux-arm 89ms (cache hit)
+66 http fetch GET 200 https://registry.npmjs.org/@esbuild%2fwin32-x64 89ms (cache hit)
+67 http fetch GET 200 https://registry.npmjs.org/@esbuild%2fdarwin-x64 92ms (cache hit)
+68 http fetch GET 200 https://registry.npmjs.org/@esbuild%2fsunos-x64 94ms (cache hit)
+69 http fetch GET 200 https://registry.npmjs.org/@esbuild%2fnetbsd-x64 94ms (cache hit)
+70 http fetch GET 200 https://registry.npmjs.org/@esbuild%2flinux-ia32 95ms (cache hit)
+71 http fetch GET 200 https://registry.npmjs.org/@esbuild%2flinux-x64 98ms (cache hit)
+72 http fetch GET 200 https://registry.npmjs.org/@esbuild%2fwin32-ia32 97ms (cache hit)
+73 http fetch GET 200 https://registry.npmjs.org/@esbuild%2fandroid-arm 99ms (cache hit)
+74 http fetch GET 200 https://registry.npmjs.org/@esbuild%2flinux-ppc64 97ms (cache hit)
+75 http fetch GET 200 https://registry.npmjs.org/@esbuild%2fdarwin-arm64 94ms (cache hit)
+76 http fetch GET 200 https://registry.npmjs.org/@esbuild%2fopenbsd-x64 99ms (cache hit)
+77 http fetch GET 200 https://registry.npmjs.org/@esbuild%2fandroid-x64 104ms (cache hit)
+78 http fetch GET 200 https://registry.npmjs.org/@esbuild%2ffreebsd-x64 106ms (cache hit)
+79 http fetch GET 200 https://registry.npmjs.org/@esbuild%2faix-ppc64 112ms (cache hit)
+80 http fetch GET 200 https://registry.npmjs.org/@esbuild%2flinux-arm64 107ms (cache hit)
+81 http fetch GET 200 https://registry.npmjs.org/@esbuild%2flinux-s390x 111ms (cache hit)
+82 http fetch GET 200 https://registry.npmjs.org/@esbuild%2fwin32-arm64 112ms (cache hit)
+83 http fetch GET 200 https://registry.npmjs.org/@esbuild%2flinux-loong64 113ms (cache hit)
+84 http fetch GET 200 https://registry.npmjs.org/@esbuild%2ffreebsd-arm64 116ms (cache hit)
+85 http fetch GET 200 https://registry.npmjs.org/@esbuild%2fandroid-arm64 122ms (cache hit)
+86 http fetch GET 200 https://registry.npmjs.org/@esbuild%2flinux-riscv64 123ms (cache hit)
+87 http fetch GET 200 https://registry.npmjs.org/@esbuild%2flinux-mips64el 130ms (cache hit)
+88 timing idealTree:#root Completed in 217ms
+89 silly placeDep ROOT @esbuild/aix-ppc64@0.19.12 OK for: esbuild@0.19.12 want: 0.19.12
+90 silly placeDep ROOT @esbuild/android-arm@0.19.12 OK for: esbuild@0.19.12 want: 0.19.12
+91 silly placeDep ROOT @esbuild/android-arm64@0.19.12 OK for: esbuild@0.19.12 want: 0.19.12
+92 silly placeDep ROOT @esbuild/android-x64@0.19.12 OK for: esbuild@0.19.12 want: 0.19.12
+93 silly placeDep ROOT @esbuild/darwin-arm64@0.19.12 OK for: esbuild@0.19.12 want: 0.19.12
+94 silly placeDep ROOT @esbuild/darwin-x64@0.19.12 OK for: esbuild@0.19.12 want: 0.19.12
+95 silly placeDep ROOT @esbuild/freebsd-arm64@0.19.12 OK for: esbuild@0.19.12 want: 0.19.12
+96 silly placeDep ROOT @esbuild/freebsd-x64@0.19.12 OK for: esbuild@0.19.12 want: 0.19.12
+97 silly placeDep ROOT @esbuild/linux-arm@0.19.12 OK for: esbuild@0.19.12 want: 0.19.12
+98 silly placeDep ROOT @esbuild/linux-arm64@0.19.12 OK for: esbuild@0.19.12 want: 0.19.12
+99 silly placeDep ROOT @esbuild/linux-ia32@0.19.12 OK for: esbuild@0.19.12 want: 0.19.12
+100 silly placeDep ROOT @esbuild/linux-loong64@0.19.12 OK for: esbuild@0.19.12 want: 0.19.12
+101 silly placeDep ROOT @esbuild/linux-mips64el@0.19.12 OK for: esbuild@0.19.12 want: 0.19.12
+102 silly placeDep ROOT @esbuild/linux-ppc64@0.19.12 OK for: esbuild@0.19.12 want: 0.19.12
+103 silly placeDep ROOT @esbuild/linux-riscv64@0.19.12 OK for: esbuild@0.19.12 want: 0.19.12
+104 silly placeDep ROOT @esbuild/linux-s390x@0.19.12 OK for: esbuild@0.19.12 want: 0.19.12
+105 silly placeDep ROOT @esbuild/linux-x64@0.19.12 OK for: esbuild@0.19.12 want: 0.19.12
+106 silly placeDep ROOT @esbuild/netbsd-x64@0.19.12 OK for: esbuild@0.19.12 want: 0.19.12
+107 silly placeDep ROOT @esbuild/openbsd-x64@0.19.12 OK for: esbuild@0.19.12 want: 0.19.12
+108 silly placeDep ROOT @esbuild/sunos-x64@0.19.12 OK for: esbuild@0.19.12 want: 0.19.12
+109 silly placeDep ROOT @esbuild/win32-arm64@0.19.12 OK for: esbuild@0.19.12 want: 0.19.12
+110 silly placeDep ROOT @esbuild/win32-ia32@0.19.12 OK for: esbuild@0.19.12 want: 0.19.12
+111 silly placeDep ROOT @esbuild/win32-x64@0.19.12 OK for: esbuild@0.19.12 want: 0.19.12
+112 timing idealTree:node_modules/esbuild Completed in 18ms
+113 timing idealTree:node_modules/@esbuild/aix-ppc64 Completed in 0ms
+114 timing idealTree:node_modules/@esbuild/android-arm Completed in 0ms
+115 timing idealTree:node_modules/@esbuild/android-arm64 Completed in 0ms
+116 timing idealTree:node_modules/@esbuild/android-x64 Completed in 0ms
+117 timing idealTree:node_modules/@esbuild/darwin-arm64 Completed in 0ms
+118 timing idealTree:node_modules/@esbuild/darwin-x64 Completed in 0ms
+119 timing idealTree:node_modules/@esbuild/freebsd-arm64 Completed in 0ms
+120 timing idealTree:node_modules/@esbuild/freebsd-x64 Completed in 0ms
+121 timing idealTree:node_modules/@esbuild/linux-arm Completed in 0ms
+122 timing idealTree:node_modules/@esbuild/linux-arm64 Completed in 0ms
+123 timing idealTree:node_modules/@esbuild/linux-ia32 Completed in 0ms
+124 timing idealTree:node_modules/@esbuild/linux-loong64 Completed in 0ms
+125 timing idealTree:node_modules/@esbuild/linux-mips64el Completed in 0ms
+126 timing idealTree:node_modules/@esbuild/linux-ppc64 Completed in 0ms
+127 timing idealTree:node_modules/@esbuild/linux-riscv64 Completed in 0ms
+128 timing idealTree:node_modules/@esbuild/linux-s390x Completed in 0ms
+129 timing idealTree:node_modules/@esbuild/linux-x64 Completed in 0ms
+130 timing idealTree:node_modules/@esbuild/netbsd-x64 Completed in 0ms
+131 timing idealTree:node_modules/@esbuild/openbsd-x64 Completed in 0ms
+132 timing idealTree:node_modules/@esbuild/sunos-x64 Completed in 0ms
+133 timing idealTree:node_modules/@esbuild/win32-arm64 Completed in 0ms
+134 timing idealTree:node_modules/@esbuild/win32-ia32 Completed in 0ms
+135 timing idealTree:node_modules/@esbuild/win32-x64 Completed in 0ms
+136 timing idealTree:buildDeps Completed in 237ms
+137 timing idealTree:fixDepFlags Completed in 0ms
+138 timing idealTree Completed in 253ms
+139 timing reify:loadTrees Completed in 254ms
+140 timing reify:diffTrees Completed in 2ms
+141 silly reify mark retired [
+141 silly reify   '/Users/eduardarosseto/Dev/Estudos/library/node_modules/@esbuild/aix-ppc64'
+141 silly reify ]
+142 silly reify mark retired [
+142 silly reify   '/Users/eduardarosseto/Dev/Estudos/library/node_modules/@esbuild/android-arm'
+142 silly reify ]
+143 silly reify mark retired [
+143 silly reify   '/Users/eduardarosseto/Dev/Estudos/library/node_modules/@esbuild/android-arm64'
+143 silly reify ]
+144 silly reify mark retired [
+144 silly reify   '/Users/eduardarosseto/Dev/Estudos/library/node_modules/@esbuild/android-x64'
+144 silly reify ]
+145 silly reify mark retired [
+145 silly reify   '/Users/eduardarosseto/Dev/Estudos/library/node_modules/@esbuild/darwin-arm64'
+145 silly reify ]
+146 silly reify mark retired [
+146 silly reify   '/Users/eduardarosseto/Dev/Estudos/library/node_modules/@esbuild/darwin-x64'
+146 silly reify ]
+147 silly reify mark retired [
+147 silly reify   '/Users/eduardarosseto/Dev/Estudos/library/node_modules/@esbuild/freebsd-arm64'
+147 silly reify ]
+148 silly reify mark retired [
+148 silly reify   '/Users/eduardarosseto/Dev/Estudos/library/node_modules/@esbuild/freebsd-x64'
+148 silly reify ]
+149 silly reify mark retired [
+149 silly reify   '/Users/eduardarosseto/Dev/Estudos/library/node_modules/@esbuild/linux-arm'
+149 silly reify ]
+150 silly reify mark retired [
+150 silly reify   '/Users/eduardarosseto/Dev/Estudos/library/node_modules/@esbuild/linux-arm64'
+150 silly reify ]
+151 silly reify mark retired [
+151 silly reify   '/Users/eduardarosseto/Dev/Estudos/library/node_modules/@esbuild/linux-loong64'
+151 silly reify ]
+152 silly reify mark retired [
+152 silly reify   '/Users/eduardarosseto/Dev/Estudos/library/node_modules/@esbuild/linux-mips64el'
+152 silly reify ]
+153 silly reify mark retired [
+153 silly reify   '/Users/eduardarosseto/Dev/Estudos/library/node_modules/@esbuild/linux-ia32'
+153 silly reify ]
+154 silly reify mark retired [
+154 silly reify   '/Users/eduardarosseto/Dev/Estudos/library/node_modules/@esbuild/linux-ppc64'
+154 silly reify ]
+155 silly reify mark retired [
+155 silly reify   '/Users/eduardarosseto/Dev/Estudos/library/node_modules/@esbuild/linux-s390x'
+155 silly reify ]
+156 silly reify mark retired [
+156 silly reify   '/Users/eduardarosseto/Dev/Estudos/library/node_modules/@esbuild/linux-riscv64'
+156 silly reify ]
+157 silly reify mark retired [
+157 silly reify   '/Users/eduardarosseto/Dev/Estudos/library/node_modules/@esbuild/linux-x64'
+157 silly reify ]
+158 silly reify mark retired [
+158 silly reify   '/Users/eduardarosseto/Dev/Estudos/library/node_modules/@esbuild/netbsd-arm64'
+158 silly reify ]
+159 silly reify mark retired [
+159 silly reify   '/Users/eduardarosseto/Dev/Estudos/library/node_modules/@esbuild/netbsd-x64'
+159 silly reify ]
+160 silly reify mark retired [
+160 silly reify   '/Users/eduardarosseto/Dev/Estudos/library/node_modules/@esbuild/openbsd-arm64'
+160 silly reify ]
+161 silly reify mark retired [
+161 silly reify   '/Users/eduardarosseto/Dev/Estudos/library/node_modules/@esbuild/openbsd-x64'
+161 silly reify ]
+162 silly reify mark retired [
+162 silly reify   '/Users/eduardarosseto/Dev/Estudos/library/node_modules/@esbuild/openharmony-arm64'
+162 silly reify ]
+163 silly reify mark retired [
+163 silly reify   '/Users/eduardarosseto/Dev/Estudos/library/node_modules/@esbuild/sunos-x64'
+163 silly reify ]
+164 silly reify mark retired [
+164 silly reify   '/Users/eduardarosseto/Dev/Estudos/library/node_modules/@esbuild/win32-arm64'
+164 silly reify ]
+165 silly reify mark retired [
+165 silly reify   '/Users/eduardarosseto/Dev/Estudos/library/node_modules/@esbuild/win32-ia32'
+165 silly reify ]
+166 silly reify mark retired [
+166 silly reify   '/Users/eduardarosseto/Dev/Estudos/library/node_modules/@esbuild/win32-x64'
+166 silly reify ]
+167 silly reify mark retired [
+167 silly reify   '/Users/eduardarosseto/Dev/Estudos/library/node_modules/esbuild',
+167 silly reify   '/Users/eduardarosseto/Dev/Estudos/library/node_modules/.bin/esbuild'
+167 silly reify ]
+168 silly reify moves {
+168 silly reify   '/Users/eduardarosseto/Dev/Estudos/library/node_modules/@esbuild/aix-ppc64': '/Users/eduardarosseto/Dev/Estudos/library/node_modules/@esbuild/.aix-ppc64-RdoWQP0w',
+168 silly reify   '/Users/eduardarosseto/Dev/Estudos/library/node_modules/@esbuild/android-arm': '/Users/eduardarosseto/Dev/Estudos/library/node_modules/@esbuild/.android-arm-HmbECl6V',
+168 silly reify   '/Users/eduardarosseto/Dev/Estudos/library/node_modules/@esbuild/android-arm64': '/Users/eduardarosseto/Dev/Estudos/library/node_modules/@esbuild/.android-arm64-TqxnoMc7',
+168 silly reify   '/Users/eduardarosseto/Dev/Estudos/library/node_modules/@esbuild/android-x64': '/Users/eduardarosseto/Dev/Estudos/library/node_modules/@esbuild/.android-x64-DCf4av9p',
+168 silly reify   '/Users/eduardarosseto/Dev/Estudos/library/node_modules/@esbuild/darwin-arm64': '/Users/eduardarosseto/Dev/Estudos/library/node_modules/@esbuild/.darwin-arm64-aZ9DqqV6',
+168 silly reify   '/Users/eduardarosseto/Dev/Estudos/library/node_modules/@esbuild/darwin-x64': '/Users/eduardarosseto/Dev/Estudos/library/node_modules/@esbuild/.darwin-x64-r1I7MZ5o',
+168 silly reify   '/Users/eduardarosseto/Dev/Estudos/library/node_modules/@esbuild/freebsd-arm64': '/Users/eduardarosseto/Dev/Estudos/library/node_modules/@esbuild/.freebsd-arm64-Ve5rJ7Gu',
+168 silly reify   '/Users/eduardarosseto/Dev/Estudos/library/node_modules/@esbuild/freebsd-x64': '/Users/eduardarosseto/Dev/Estudos/library/node_modules/@esbuild/.freebsd-x64-OvaIXhxh',
+168 silly reify   '/Users/eduardarosseto/Dev/Estudos/library/node_modules/@esbuild/linux-arm': '/Users/eduardarosseto/Dev/Estudos/library/node_modules/@esbuild/.linux-arm-pTAB0IVx',
+168 silly reify   '/Users/eduardarosseto/Dev/Estudos/library/node_modules/@esbuild/linux-arm64': '/Users/eduardarosseto/Dev/Estudos/library/node_modules/@esbuild/.linux-arm64-5Jv4JbdG',
+168 silly reify   '/Users/eduardarosseto/Dev/Estudos/library/node_modules/@esbuild/linux-loong64': '/Users/eduardarosseto/Dev/Estudos/library/node_modules/@esbuild/.linux-loong64-zZg63SRS',
+168 silly reify   '/Users/eduardarosseto/Dev/Estudos/library/node_modules/@esbuild/linux-mips64el': '/Users/eduardarosseto/Dev/Estudos/library/node_modules/@esbuild/.linux-mips64el-PFENsycc',
+168 silly reify   '/Users/eduardarosseto/Dev/Estudos/library/node_modules/@esbuild/linux-ia32': '/Users/eduardarosseto/Dev/Estudos/library/node_modules/@esbuild/.linux-ia32-3rEd4YTG',
+168 silly reify   '/Users/eduardarosseto/Dev/Estudos/library/node_modules/@esbuild/linux-ppc64': '/Users/eduardarosseto/Dev/Estudos/library/node_modules/@esbuild/.linux-ppc64-Tv4G1iDJ',
+168 silly reify   '/Users/eduardarosseto/Dev/Estudos/library/node_modules/@esbuild/linux-s390x': '/Users/eduardarosseto/Dev/Estudos/library/node_modules/@esbuild/.linux-s390x-aFlHiqAF',
+168 silly reify   '/Users/eduardarosseto/Dev/Estudos/library/node_modules/@esbuild/linux-riscv64': '/Users/eduardarosseto/Dev/Estudos/library/node_modules/@esbuild/.linux-riscv64-LmreYnfJ',
+168 silly reify   '/Users/eduardarosseto/Dev/Estudos/library/node_modules/@esbuild/linux-x64': '/Users/eduardarosseto/Dev/Estudos/library/node_modules/@esbuild/.linux-x64-Y8nsO3SB',
+168 silly reify   '/Users/eduardarosseto/Dev/Estudos/library/node_modules/@esbuild/netbsd-arm64': '/Users/eduardarosseto/Dev/Estudos/library/node_modules/@esbuild/.netbsd-arm64-uthFCqTP',
+168 silly reify   '/Users/eduardarosseto/Dev/Estudos/library/node_modules/@esbuild/netbsd-x64': '/Users/eduardarosseto/Dev/Estudos/library/node_modules/@esbuild/.netbsd-x64-Twss4XGY',
+168 silly reify   '/Users/eduardarosseto/Dev/Estudos/library/node_modules/@esbuild/openbsd-arm64': '/Users/eduardarosseto/Dev/Estudos/library/node_modules/@esbuild/.openbsd-arm64-yJgr4dLn',
+168 silly reify   '/Users/eduardarosseto/Dev/Estudos/library/node_modules/@esbuild/openbsd-x64': '/Users/eduardarosseto/Dev/Estudos/library/node_modules/@esbuild/.openbsd-x64-OwV2mShf',
+168 silly reify   '/Users/eduardarosseto/Dev/Estudos/library/node_modules/@esbuild/openharmony-arm64': '/Users/eduardarosseto/Dev/Estudos/library/node_modules/@esbuild/.openharmony-arm64-ow3ROw6b',
+168 silly reify   '/Users/eduardarosseto/Dev/Estudos/library/node_modules/@esbuild/sunos-x64': '/Users/eduardarosseto/Dev/Estudos/library/node_modules/@esbuild/.sunos-x64-7cvnHKy6',
+168 silly reify   '/Users/eduardarosseto/Dev/Estudos/library/node_modules/@esbuild/win32-arm64': '/Users/eduardarosseto/Dev/Estudos/library/node_modules/@esbuild/.win32-arm64-TkTAw0na',
+168 silly reify   '/Users/eduardarosseto/Dev/Estudos/library/node_modules/@esbuild/win32-ia32': '/Users/eduardarosseto/Dev/Estudos/library/node_modules/@esbuild/.win32-ia32-3SPsaA88',
+168 silly reify   '/Users/eduardarosseto/Dev/Estudos/library/node_modules/@esbuild/win32-x64': '/Users/eduardarosseto/Dev/Estudos/library/node_modules/@esbuild/.win32-x64-uyAYFjSG',
+168 silly reify   '/Users/eduardarosseto/Dev/Estudos/library/node_modules/esbuild': '/Users/eduardarosseto/Dev/Estudos/library/node_modules/.esbuild-QmTzp7hb',
+168 silly reify   '/Users/eduardarosseto/Dev/Estudos/library/node_modules/.bin/esbuild': '/Users/eduardarosseto/Dev/Estudos/library/node_modules/.bin/.esbuild-8NTAFgWJ'
+168 silly reify }
+169 timing reify:retireShallow Completed in 9ms
+170 timing reify:createSparse Completed in 3ms
+171 timing reify:loadBundles Completed in 0ms
+172 silly audit bulk request {
+172 silly audit   aos: [ '2.3.4' ],
+172 silly audit   'classlist-polyfill': [ '1.2.0' ],
+172 silly audit   jquery: [ '4.0.0' ],
+172 silly audit   'lodash.debounce': [ '4.0.8' ],
+172 silly audit   'lodash.throttle': [ '4.1.1' ],
+172 silly audit   esbuild: [ '0.19.12' ],
+172 silly audit   '@esbuild/aix-ppc64': [ '0.19.12' ],
+172 silly audit   '@esbuild/android-arm': [ '0.19.12' ],
+172 silly audit   '@esbuild/android-arm64': [ '0.19.12' ],
+172 silly audit   '@esbuild/android-x64': [ '0.19.12' ],
+172 silly audit   '@esbuild/darwin-arm64': [ '0.19.12' ],
+172 silly audit   '@esbuild/darwin-x64': [ '0.19.12' ],
+172 silly audit   '@esbuild/freebsd-arm64': [ '0.19.12' ],
+172 silly audit   '@esbuild/freebsd-x64': [ '0.19.12' ],
+172 silly audit   '@esbuild/linux-arm': [ '0.19.12' ],
+172 silly audit   '@esbuild/linux-arm64': [ '0.19.12' ],
+172 silly audit   '@esbuild/linux-ia32': [ '0.19.12' ],
+172 silly audit   '@esbuild/linux-loong64': [ '0.19.12' ],
+172 silly audit   '@esbuild/linux-mips64el': [ '0.19.12' ],
+172 silly audit   '@esbuild/linux-ppc64': [ '0.19.12' ],
+172 silly audit   '@esbuild/linux-riscv64': [ '0.19.12' ],
+172 silly audit   '@esbuild/linux-s390x': [ '0.19.12' ],
+172 silly audit   '@esbuild/linux-x64': [ '0.19.12' ],
+172 silly audit   '@esbuild/netbsd-x64': [ '0.19.12' ],
+172 silly audit   '@esbuild/openbsd-x64': [ '0.19.12' ],
+172 silly audit   '@esbuild/sunos-x64': [ '0.19.12' ],
+172 silly audit   '@esbuild/win32-arm64': [ '0.19.12' ],
+172 silly audit   '@esbuild/win32-ia32': [ '0.19.12' ],
+172 silly audit   '@esbuild/win32-x64': [ '0.19.12' ]
+172 silly audit }
+173 verbose reify failed optional dependency /Users/eduardarosseto/Dev/Estudos/library/node_modules/@esbuild/win32-x64
+174 silly reify mark deleted [
+174 silly reify   '/Users/eduardarosseto/Dev/Estudos/library/node_modules/@esbuild/win32-x64'
+174 silly reify ]
+175 verbose reify failed optional dependency /Users/eduardarosseto/Dev/Estudos/library/node_modules/@esbuild/win32-ia32
+176 silly reify mark deleted [
+176 silly reify   '/Users/eduardarosseto/Dev/Estudos/library/node_modules/@esbuild/win32-ia32'
+176 silly reify ]
+177 verbose reify failed optional dependency /Users/eduardarosseto/Dev/Estudos/library/node_modules/@esbuild/win32-arm64
+178 silly reify mark deleted [
+178 silly reify   '/Users/eduardarosseto/Dev/Estudos/library/node_modules/@esbuild/win32-arm64'
+178 silly reify ]
+179 verbose reify failed optional dependency /Users/eduardarosseto/Dev/Estudos/library/node_modules/@esbuild/sunos-x64
+180 silly reify mark deleted [
+180 silly reify   '/Users/eduardarosseto/Dev/Estudos/library/node_modules/@esbuild/sunos-x64'
+180 silly reify ]
+181 verbose reify failed optional dependency /Users/eduardarosseto/Dev/Estudos/library/node_modules/@esbuild/openbsd-x64
+182 silly reify mark deleted [
+182 silly reify   '/Users/eduardarosseto/Dev/Estudos/library/node_modules/@esbuild/openbsd-x64'
+182 silly reify ]
+183 verbose reify failed optional dependency /Users/eduardarosseto/Dev/Estudos/library/node_modules/@esbuild/netbsd-x64
+184 silly reify mark deleted [
+184 silly reify   '/Users/eduardarosseto/Dev/Estudos/library/node_modules/@esbuild/netbsd-x64'
+184 silly reify ]
+185 verbose reify failed optional dependency /Users/eduardarosseto/Dev/Estudos/library/node_modules/@esbuild/linux-x64
+186 silly reify mark deleted [
+186 silly reify   '/Users/eduardarosseto/Dev/Estudos/library/node_modules/@esbuild/linux-x64'
+186 silly reify ]
+187 verbose reify failed optional dependency /Users/eduardarosseto/Dev/Estudos/library/node_modules/@esbuild/linux-riscv64
+188 silly reify mark deleted [
+188 silly reify   '/Users/eduardarosseto/Dev/Estudos/library/node_modules/@esbuild/linux-riscv64'
+188 silly reify ]
+189 verbose reify failed optional dependency /Users/eduardarosseto/Dev/Estudos/library/node_modules/@esbuild/linux-s390x
+190 silly reify mark deleted [
+190 silly reify   '/Users/eduardarosseto/Dev/Estudos/library/node_modules/@esbuild/linux-s390x'
+190 silly reify ]
+191 verbose reify failed optional dependency /Users/eduardarosseto/Dev/Estudos/library/node_modules/@esbuild/linux-ppc64
+192 silly reify mark deleted [
+192 silly reify   '/Users/eduardarosseto/Dev/Estudos/library/node_modules/@esbuild/linux-ppc64'
+192 silly reify ]
+193 verbose reify failed optional dependency /Users/eduardarosseto/Dev/Estudos/library/node_modules/@esbuild/linux-ia32
+194 silly reify mark deleted [
+194 silly reify   '/Users/eduardarosseto/Dev/Estudos/library/node_modules/@esbuild/linux-ia32'
+194 silly reify ]
+195 verbose reify failed optional dependency /Users/eduardarosseto/Dev/Estudos/library/node_modules/@esbuild/linux-mips64el
+196 silly reify mark deleted [
+196 silly reify   '/Users/eduardarosseto/Dev/Estudos/library/node_modules/@esbuild/linux-mips64el'
+196 silly reify ]
+197 verbose reify failed optional dependency /Users/eduardarosseto/Dev/Estudos/library/node_modules/@esbuild/linux-loong64
+198 silly reify mark deleted [
+198 silly reify   '/Users/eduardarosseto/Dev/Estudos/library/node_modules/@esbuild/linux-loong64'
+198 silly reify ]
+199 verbose reify failed optional dependency /Users/eduardarosseto/Dev/Estudos/library/node_modules/@esbuild/linux-arm64
+200 silly reify mark deleted [
+200 silly reify   '/Users/eduardarosseto/Dev/Estudos/library/node_modules/@esbuild/linux-arm64'
+200 silly reify ]
+201 verbose reify failed optional dependency /Users/eduardarosseto/Dev/Estudos/library/node_modules/@esbuild/linux-arm
+202 silly reify mark deleted [
+202 silly reify   '/Users/eduardarosseto/Dev/Estudos/library/node_modules/@esbuild/linux-arm'
+202 silly reify ]
+203 verbose reify failed optional dependency /Users/eduardarosseto/Dev/Estudos/library/node_modules/@esbuild/freebsd-x64
+204 silly reify mark deleted [
+204 silly reify   '/Users/eduardarosseto/Dev/Estudos/library/node_modules/@esbuild/freebsd-x64'
+204 silly reify ]
+205 verbose reify failed optional dependency /Users/eduardarosseto/Dev/Estudos/library/node_modules/@esbuild/freebsd-arm64
+206 silly reify mark deleted [
+206 silly reify   '/Users/eduardarosseto/Dev/Estudos/library/node_modules/@esbuild/freebsd-arm64'
+206 silly reify ]
+207 verbose reify failed optional dependency /Users/eduardarosseto/Dev/Estudos/library/node_modules/@esbuild/darwin-x64
+208 silly reify mark deleted [
+208 silly reify   '/Users/eduardarosseto/Dev/Estudos/library/node_modules/@esbuild/darwin-x64'
+208 silly reify ]
+209 verbose reify failed optional dependency /Users/eduardarosseto/Dev/Estudos/library/node_modules/@esbuild/android-x64
+210 silly reify mark deleted [
+210 silly reify   '/Users/eduardarosseto/Dev/Estudos/library/node_modules/@esbuild/android-x64'
+210 silly reify ]
+211 verbose reify failed optional dependency /Users/eduardarosseto/Dev/Estudos/library/node_modules/@esbuild/android-arm64
+212 silly reify mark deleted [
+212 silly reify   '/Users/eduardarosseto/Dev/Estudos/library/node_modules/@esbuild/android-arm64'
+212 silly reify ]
+213 verbose reify failed optional dependency /Users/eduardarosseto/Dev/Estudos/library/node_modules/@esbuild/android-arm
+214 silly reify mark deleted [
+214 silly reify   '/Users/eduardarosseto/Dev/Estudos/library/node_modules/@esbuild/android-arm'
+214 silly reify ]
+215 verbose reify failed optional dependency /Users/eduardarosseto/Dev/Estudos/library/node_modules/@esbuild/aix-ppc64
+216 silly reify mark deleted [
+216 silly reify   '/Users/eduardarosseto/Dev/Estudos/library/node_modules/@esbuild/aix-ppc64'
+216 silly reify ]
+217 timing reifyNode:node_modules/@esbuild/win32-x64 Completed in 9ms
+218 timing reifyNode:node_modules/@esbuild/win32-ia32 Completed in 9ms
+219 timing reifyNode:node_modules/@esbuild/win32-arm64 Completed in 9ms
+220 timing reifyNode:node_modules/@esbuild/sunos-x64 Completed in 9ms
+221 timing reifyNode:node_modules/@esbuild/openbsd-x64 Completed in 9ms
+222 timing reifyNode:node_modules/@esbuild/netbsd-x64 Completed in 9ms
+223 timing reifyNode:node_modules/@esbuild/linux-x64 Completed in 9ms
+224 timing reifyNode:node_modules/@esbuild/linux-riscv64 Completed in 10ms
+225 timing reifyNode:node_modules/@esbuild/linux-s390x Completed in 10ms
+226 timing reifyNode:node_modules/@esbuild/linux-ppc64 Completed in 10ms
+227 timing reifyNode:node_modules/@esbuild/linux-ia32 Completed in 10ms
+228 timing reifyNode:node_modules/@esbuild/linux-mips64el Completed in 10ms
+229 timing reifyNode:node_modules/@esbuild/linux-loong64 Completed in 10ms
+230 timing reifyNode:node_modules/@esbuild/linux-arm64 Completed in 10ms
+231 timing reifyNode:node_modules/@esbuild/linux-arm Completed in 10ms
+232 timing reifyNode:node_modules/@esbuild/freebsd-x64 Completed in 10ms
+233 timing reifyNode:node_modules/@esbuild/freebsd-arm64 Completed in 10ms
+234 timing reifyNode:node_modules/@esbuild/darwin-x64 Completed in 9ms
+235 timing reifyNode:node_modules/@esbuild/android-x64 Completed in 9ms
+236 timing reifyNode:node_modules/@esbuild/android-arm64 Completed in 9ms
+237 timing reifyNode:node_modules/@esbuild/android-arm Completed in 9ms
+238 timing reifyNode:node_modules/@esbuild/aix-ppc64 Completed in 9ms
+239 silly tarball no local data for esbuild@https://registry.npmjs.org/esbuild/-/esbuild-0.19.12.tgz. Extracting by manifest.
+240 silly tarball no local data for @esbuild/darwin-arm64@https://registry.npmjs.org/@esbuild/darwin-arm64/-/darwin-arm64-0.19.12.tgz. Extracting by manifest.
+241 http fetch GET 200 https://registry.npmjs.org/esbuild/-/esbuild-0.19.12.tgz 177ms (cache miss)
+242 timing reifyNode:node_modules/esbuild Completed in 191ms
+243 http fetch POST 200 https://registry.npmjs.org/-/npm/v1/security/advisories/bulk 350ms
+244 timing auditReport:getReport Completed in 351ms
+245 silly audit report {
+245 silly audit report   esbuild: [
+245 silly audit report     {
+245 silly audit report       id: 1102341,
+245 silly audit report       url: 'https://github.com/advisories/GHSA-67mh-4wv8-2f99',
+245 silly audit report       title: 'esbuild enables any website to send any requests to the development server and read the response',
+245 silly audit report       severity: 'moderate',
+245 silly audit report       vulnerable_versions: '<=0.24.2',
+245 silly audit report       cwe: [Array],
+245 silly audit report       cvss: [Object]
+245 silly audit report     }
+245 silly audit report   ]
+245 silly audit report }
+246 timing metavuln:packument:esbuild Completed in 0ms
+247 timing metavuln:cache:get:security-advisory:esbuild:jKdCIzePj7J1488qgRXvF8Srh9wutSuR1exB8YooNX62hT+qhtrUXYbArLNoIhgwbaCqKpmduh18syZU7BR9SA== Completed in 1ms
+248 timing metavuln:load:security-advisory:esbuild:1102341 Completed in 22ms
+249 timing metavuln:cache:put:security-advisory:esbuild:jKdCIzePj7J1488qgRXvF8Srh9wutSuR1exB8YooNX62hT+qhtrUXYbArLNoIhgwbaCqKpmduh18syZU7BR9SA== Completed in 11ms
+250 timing metavuln:calculate:security-advisory:esbuild:1102341 Completed in 34ms
+251 timing auditReport:init Completed in 39ms
+252 timing reify:audit Completed in 391ms
+253 http fetch GET 200 https://registry.npmjs.org/@esbuild/darwin-arm64/-/darwin-arm64-0.19.12.tgz 662ms (cache miss)
+254 timing reifyNode:node_modules/@esbuild/darwin-arm64 Completed in 676ms
+255 timing reify:unpack Completed in 677ms
+256 timing reify:unretire Completed in 0ms
+257 timing build:queue Completed in 1ms
+258 timing build:link:node_modules/esbuild Completed in 1ms
+259 timing build:link Completed in 1ms
+260 timing npm Completed in 1063ms
+261 verbose unfinished npm timer command:install 1775431769791
+262 verbose unfinished npm timer reify 1775431769794
+263 verbose unfinished npm timer reify:build 1775431770743
+264 verbose unfinished npm timer build 1775431770744
+265 verbose unfinished npm timer build:deps 1775431770744
+266 verbose unfinished npm timer build:run:postinstall 1775431770746
+267 info ok
+268 error Exit handler never called!
+269 error This is an error with npm itself. Please report this error at:
+270 error     <https://github.com/npm/cli/issues>
+271 error A complete log of this run can be found in:
+271 error     /Users/eduardarosseto/Dev/Estudos/library/.npm-cache/_logs/2026-04-05T23_29_29_681Z-debug-0.log

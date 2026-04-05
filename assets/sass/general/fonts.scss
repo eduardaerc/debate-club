@@ -16,37 +16,37 @@ $extra-bold: 800;
 @mixin display($color: $black, $font-weight: $regular) {
     font-family: $font-serif;
     color: $color;
-    font-size: 70px;
-    line-height: 1;
+    @include fsize(70px);
+    line-height: 100%;
     font-weight: $font-weight;
     font-style: normal;
     letter-spacing: -2.1px;
     @media (max-width: $bp-tablet) {
-        font-size: 48px;
+        @include fsize(48px);
     }
     @media (max-width: $bp-mobile) {
-        font-size: 36px;
+        @include fsize(36px);
     }
 }
 
 @mixin heading-1($color: $black, $font-weight: $regular) {
     font-family: $font-serif;
     color: $color;
-    font-size: 30px;
-    line-height: 1.2;
+    @include fsize(30px);
+    line-height: 120%;
     font-weight: $font-weight;
     font-style: normal;
     letter-spacing: -0.9px;
     @media (max-width: $bp-mobile) {
-        font-size: 24px;
+        @include fsize(24px);
     }
 }
 
 @mixin p($color: $black, $font-weight: $regular) {
     font-family: $font-sans;
     color: $color;
-    font-size: 16px;
-    line-height: 1.1;
+    @include fsize(16px);
+    line-height: 110%;
     font-weight: $font-weight;
     letter-spacing: -0.48px;
 }
@@ -54,8 +54,8 @@ $extra-bold: 800;
 @mixin p2($color: $black, $font-weight: $regular) {
     font-family: $font-serif;
     color: $color;
-    font-size: 16px;
-    line-height: 1.1;
+    @include fsize(16px);
+    line-height: 110%;
     font-weight: $font-weight;
     font-style: normal;
     letter-spacing: -0.48px;
@@ -64,8 +64,8 @@ $extra-bold: 800;
 @mixin link($color: $black, $font-weight: $regular) {
     font-family: $font-serif;
     color: $color;
-    font-size: 18px;
-    line-height: 1.1;
+    @include fsize(18px);
+    line-height: 110%;
     font-weight: $font-weight;
     font-style: normal;
     letter-spacing: -0.54px;
@@ -75,8 +75,8 @@ $extra-bold: 800;
 @mixin link-2($color: $black, $font-weight: $regular) {
     font-family: $font-sans;
     color: $color;
-    font-size: 16px;
-    line-height: 1.1;
+    @include fsize(16px);
+    line-height: 110%;
     font-weight: $font-weight;
     letter-spacing: -0.48px;
     text-decoration: none;
@@ -85,8 +85,8 @@ $extra-bold: 800;
 @mixin label($color: $text-color-1) {
     font-family: $font-sans;
     color: $color;
-    font-size: 16px;
-    line-height: 1.1;
+    @include fsize(16px);
+    line-height: 110%;
     font-weight: $regular;
     letter-spacing: -0.48px;
 }

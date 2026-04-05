@@ -67,7 +67,7 @@ button {
 }
 
 *::-webkit-scrollbar-thumb {
-  background-color: rgba(84, 84, 84, 0.4509803922);
+  background-color: #F6F0E4;
   border-radius: 999px;
   border: 2px solid #545454;
 }
@@ -173,18 +173,24 @@ header nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 1.25rem 1rem;
+  padding: 1.25rem 1.25rem;
   width: 100%;
   background-color: #FCFAF6;
 }
 header nav div.nav-links {
   gap: 5rem;
 }
+@media (max-width: 678px) {
+  header nav div.nav-links {
+    display: none !important;
+  }
+}
 header nav div.nav-links a {
   font-family: "Gowun Batang", serif;
   color: #000000;
   font-size: 18px;
-  line-height: 1.1;
+  font-size: 1.125rem;
+  line-height: 110%;
   font-weight: 400;
   font-style: normal;
   letter-spacing: -0.54px;
@@ -198,21 +204,59 @@ header nav div.nav-links a:hover {
 header nav div.nav-links:hover a:not(:hover) {
   opacity: 0.2;
 }
-header nav button.nav-hamburger {
+header nav button {
   display: none;
   font-family: "Gowun Batang", serif;
   color: #000000;
   font-size: 18px;
-  line-height: 1.1;
+  font-size: 1.125rem;
+  line-height: 110%;
   font-weight: 400;
   font-style: normal;
   letter-spacing: -0.54px;
   text-decoration: none;
 }
 @media (max-width: 678px) {
-  header nav button.nav-hamburger {
+  header nav button {
     display: block;
   }
+}
+header div.mobile-menu button {
+  font-family: "Gowun Batang", serif;
+  color: #000000;
+  font-size: 18px;
+  font-size: 1.125rem;
+  line-height: 110%;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: -0.54px;
+  text-decoration: none;
+}
+header div.mobile-menu nav {
+  width: 100vw;
+  height: 100vh;
+  background-color: #FCFAF6;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 9;
+  overflow: hidden;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  -webkit-transition: all 1s cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition: all 1s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+header div.mobile-menu nav button {
+  position: absolute;
+  top: 5%;
+  right: 5%;
 }
 
 footer {
@@ -254,9 +298,10 @@ footer div.footer-content {
 }
 footer div.footer-content p.footer-tagline {
   font-family: "Gowun Batang", serif;
-  color: #FCFAF6;
+  color: #fcfaf6;
   font-size: 30px;
-  line-height: 1.2;
+  font-size: 1.875rem;
+  line-height: 120%;
   font-weight: 400;
   font-style: normal;
   letter-spacing: -0.9px;
@@ -269,6 +314,7 @@ footer div.footer-content p.footer-tagline {
 @media (max-width: 678px) {
   footer div.footer-content p.footer-tagline {
     font-size: 24px;
+    font-size: 1.5rem;
   }
 }
 footer div.footer-content div.footer-contact {
@@ -277,32 +323,40 @@ footer div.footer-content div.footer-contact {
           flex: 1;
   gap: 1.25rem;
 }
-footer div.footer-content div.footer-contact p {
+footer div.footer-content div.footer-contact a {
   font-family: "Gowun Batang", serif;
-  color: #FCFAF6;
+  color: #fcfaf6;
   font-size: 30px;
-  line-height: 1.2;
+  font-size: 1.875rem;
+  line-height: 120%;
   font-weight: 400;
   font-style: normal;
   letter-spacing: -0.9px;
   max-width: 340px;
+  -webkit-transition: all 1s cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition: all 1s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 @media (max-width: 678px) {
-  footer div.footer-content div.footer-contact p {
+  footer div.footer-content div.footer-contact a {
     font-size: 24px;
+    font-size: 1.5rem;
   }
+}
+footer div.footer-content div.footer-contact a:hover {
+  color: rgba(252, 250, 246, 0.537254902);
 }
 footer .footer-copyright p {
   font-family: "Rethink Sans", sans-serif;
   color: #E4E4E4;
   font-size: 16px;
-  line-height: 1.1;
+  font-size: 1rem;
+  line-height: 110%;
   font-weight: 400;
   letter-spacing: -0.48px;
 }
 
 section.initial-banner {
-  padding-top: 4.75rem;
+  padding-top: 5rem;
 }
 section.initial-banner div.announcement-bar {
   -webkit-box-pack: justify;
@@ -314,7 +368,7 @@ section.initial-banner div.announcement-bar {
   width: 100%;
   background-color: #F6F0E4;
   border-radius: 10px;
-  padding: 1rem 1.25rem;
+  padding: 1.25rem 1.25rem;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   gap: 1.25rem;
@@ -332,7 +386,8 @@ section.initial-banner div.announcement-bar p {
   font-family: "Rethink Sans", sans-serif;
   color: #000000;
   font-size: 16px;
-  line-height: 1.1;
+  font-size: 1rem;
+  line-height: 110%;
   font-weight: 400;
   letter-spacing: -0.48px;
 }
@@ -345,11 +400,16 @@ section.initial-banner div.announcement-bar a {
   font-family: "Rethink Sans", sans-serif;
   color: #000000;
   font-size: 16px;
-  line-height: 1.1;
+  font-size: 1rem;
+  line-height: 110%;
   font-weight: 400;
   letter-spacing: -0.48px;
   text-decoration: underline;
-  cursor: pointer;
+  -webkit-transition: all 1s cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition: all 1s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+section.initial-banner div.announcement-bar a:hover {
+  color: #5B5B5B;
 }
 section.initial-banner div.column {
   display: -webkit-box;
@@ -369,7 +429,8 @@ section.initial-banner div.column span {
   font-family: "Rethink Sans", sans-serif;
   color: #000000;
   font-size: 16px;
-  line-height: 1.1;
+  font-size: 1rem;
+  line-height: 110%;
   font-weight: 400;
   letter-spacing: -0.48px;
   margin-bottom: 3.125rem;
@@ -378,7 +439,8 @@ section.initial-banner div.column h1 {
   font-family: "Gowun Batang", serif;
   color: #000000;
   font-size: 70px;
-  line-height: 1;
+  font-size: 4.375rem;
+  line-height: 100%;
   font-weight: 400;
   font-style: normal;
   letter-spacing: -2.1px;
@@ -388,22 +450,25 @@ section.initial-banner div.column h1 {
 @media (max-width: 800px) {
   section.initial-banner div.column h1 {
     font-size: 48px;
+    font-size: 3rem;
   }
 }
 @media (max-width: 678px) {
   section.initial-banner div.column h1 {
     font-size: 36px;
+    font-size: 2.25rem;
   }
 }
 section.initial-banner div.column a {
   -webkit-transition: all 1s cubic-bezier(0.25, 0.8, 0.25, 1);
   transition: all 1s cubic-bezier(0.25, 0.8, 0.25, 1);
-  margin-bottom: 4.0625rem;
+  margin-bottom: 3.125rem;
   text-decoration: underline;
-  cursor: pointer;
+  -webkit-transition: all 1s cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition: all 1s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 section.initial-banner div.column a:hover {
-  opacity: 0.6;
+  color: #5B5B5B;
 }
 section.initial-banner div.column div.illustration {
   width: 100%;
@@ -449,7 +514,8 @@ section.what-we-do .container h2 {
   font-family: "Gowun Batang", serif;
   color: #000000;
   font-size: 70px;
-  line-height: 1;
+  font-size: 4.375rem;
+  line-height: 100%;
   font-weight: 400;
   font-style: normal;
   letter-spacing: -2.1px;
@@ -459,18 +525,21 @@ section.what-we-do .container h2 {
 @media (max-width: 800px) {
   section.what-we-do .container h2 {
     font-size: 48px;
+    font-size: 3rem;
   }
 }
 @media (max-width: 678px) {
   section.what-we-do .container h2 {
     font-size: 36px;
+    font-size: 2.25rem;
   }
 }
 section.what-we-do .container > span {
   font-family: "Rethink Sans", sans-serif;
   color: #3D1A0D;
   font-size: 16px;
-  line-height: 1.1;
+  font-size: 1rem;
+  line-height: 110%;
   font-weight: 400;
   letter-spacing: -0.48px;
   margin-bottom: 2.5rem;
@@ -479,7 +548,8 @@ section.what-we-do .container > p {
   font-family: "Gowun Batang", serif;
   color: #000000;
   font-size: 30px;
-  line-height: 1.2;
+  font-size: 1.875rem;
+  line-height: 120%;
   font-weight: 400;
   font-style: normal;
   letter-spacing: -0.9px;
@@ -490,6 +560,7 @@ section.what-we-do .container > p {
 @media (max-width: 678px) {
   section.what-we-do .container > p {
     font-size: 24px;
+    font-size: 1.5rem;
   }
 }
 section.what-we-do .info-cards-grid {
@@ -526,7 +597,8 @@ section.what-we-do .info-cards-grid .info-card span {
   font-family: "Rethink Sans", sans-serif;
   color: #3D1A0D;
   font-size: 16px;
-  line-height: 1.1;
+  font-size: 1rem;
+  line-height: 110%;
   font-weight: 400;
   letter-spacing: -0.48px;
 }
@@ -534,7 +606,8 @@ section.what-we-do .info-cards-grid .info-card h3 {
   font-family: "Gowun Batang", serif;
   color: #000000;
   font-size: 30px;
-  line-height: 1.2;
+  font-size: 1.875rem;
+  line-height: 120%;
   font-weight: 400;
   font-style: normal;
   letter-spacing: -0.9px;
@@ -544,13 +617,15 @@ section.what-we-do .info-cards-grid .info-card h3 {
 @media (max-width: 678px) {
   section.what-we-do .info-cards-grid .info-card h3 {
     font-size: 24px;
+    font-size: 1.5rem;
   }
 }
 section.what-we-do .info-cards-grid .info-card p {
   font-family: "Rethink Sans", sans-serif;
   color: #000000;
   font-size: 16px;
-  line-height: 1.1;
+  font-size: 1rem;
+  line-height: 110%;
   font-weight: 400;
   letter-spacing: -0.48px;
   max-width: 290px;
@@ -592,7 +667,8 @@ section.results .container h2 {
   font-family: "Gowun Batang", serif;
   color: #000000;
   font-size: 70px;
-  line-height: 1;
+  font-size: 4.375rem;
+  line-height: 100%;
   font-weight: 400;
   font-style: normal;
   letter-spacing: -2.1px;
@@ -601,18 +677,21 @@ section.results .container h2 {
 @media (max-width: 800px) {
   section.results .container h2 {
     font-size: 48px;
+    font-size: 3rem;
   }
 }
 @media (max-width: 678px) {
   section.results .container h2 {
     font-size: 36px;
+    font-size: 2.25rem;
   }
 }
 section.results .container > p {
   font-family: "Rethink Sans", sans-serif;
   color: #5B5B5B;
   font-size: 16px;
-  line-height: 1.1;
+  font-size: 1rem;
+  line-height: 110%;
   font-weight: 400;
   letter-spacing: -0.48px;
   margin-bottom: 3.125rem;
@@ -631,7 +710,8 @@ section.results .container .results-lists div.content h3 {
   font-family: "Rethink Sans", sans-serif;
   color: #3D1A0D;
   font-size: 16px;
-  line-height: 1.1;
+  font-size: 1rem;
+  line-height: 110%;
   font-weight: 400;
   letter-spacing: -0.48px;
   margin-bottom: 1.25rem;
@@ -643,11 +723,12 @@ section.results .container .results-lists div.content ul li {
   border-left: 1px solid #E4E4E4;
   padding: 1.25rem;
 }
-section.results .container .results-lists div.content ul li a, section.results .container .results-lists div.content ul li p {
+section.results .container .results-lists div.content ul li a {
   font-family: "Gowun Batang", serif;
   color: #000000;
   font-size: 30px;
-  line-height: 1.2;
+  font-size: 1.875rem;
+  line-height: 120%;
   font-weight: 400;
   font-style: normal;
   letter-spacing: -0.9px;
@@ -655,26 +736,23 @@ section.results .container .results-lists div.content ul li a, section.results .
   transition: all 1s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 @media (max-width: 678px) {
-  section.results .container .results-lists div.content ul li a, section.results .container .results-lists div.content ul li p {
+  section.results .container .results-lists div.content ul li a {
     font-size: 24px;
+    font-size: 1.5rem;
   }
 }
-section.results .container .results-lists div.content ul li a:hover, section.results .container .results-lists div.content ul li p:hover {
-  opacity: 0.6;
+section.results .container .results-lists div.content ul li a:hover {
+  color: #5B5B5B;
 }
 
 section.cta {
   position: relative;
   overflow: hidden;
   padding: 3.75rem 0;
-}
-section.cta .cta-bg {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  background-image: url("/assets/img/cta.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 section.cta .cta-content {
   position: relative;
@@ -685,7 +763,7 @@ section.cta .cta-content {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 1rem;
+  gap: 1.25rem;
   width: 100%;
   text-align: center;
   max-width: 980px;
@@ -693,9 +771,10 @@ section.cta .cta-content {
 }
 section.cta .cta-content h2 {
   font-family: "Gowun Batang", serif;
-  color: #FCFAF6;
+  color: #fcfaf6;
   font-size: 70px;
-  line-height: 1;
+  font-size: 4.375rem;
+  line-height: 100%;
   font-weight: 400;
   font-style: normal;
   letter-spacing: -2.1px;
@@ -703,18 +782,21 @@ section.cta .cta-content h2 {
 @media (max-width: 800px) {
   section.cta .cta-content h2 {
     font-size: 48px;
+    font-size: 3rem;
   }
 }
 @media (max-width: 678px) {
   section.cta .cta-content h2 {
     font-size: 36px;
+    font-size: 2.25rem;
   }
 }
 section.cta .cta-content a {
   font-family: "Gowun Batang", serif;
-  color: #FCFAF6;
+  color: #fcfaf6;
   font-size: 70px;
-  line-height: 1;
+  font-size: 4.375rem;
+  line-height: 100%;
   font-weight: 400;
   font-style: normal;
   letter-spacing: -2.1px;
@@ -725,13 +807,15 @@ section.cta .cta-content a {
 @media (max-width: 800px) {
   section.cta .cta-content a {
     font-size: 48px;
+    font-size: 3rem;
   }
 }
 @media (max-width: 678px) {
   section.cta .cta-content a {
     font-size: 36px;
+    font-size: 2.25rem;
   }
 }
 section.cta .cta-content a:hover {
-  opacity: 0.8;
+  opacity: 0.7;
 }
